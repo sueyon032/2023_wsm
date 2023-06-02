@@ -1,3 +1,69 @@
 body{
     background-color: antiquewhite;
 }
+
+ /*h1과 h2는 plum 배경색*/
+h1, 
+h2{
+    /* background-color: plum;*/
+} 
+
+/* h1 자매 중 첫번째 h2만 plum 배경식 */
+h1 + h2 {
+    /* background-color: plum; */
+}
+
+/* h1의 자매인 모든 h2에 plum 배경색 */
+h1~h2 {
+    background-color: plum;
+}
+
+ul,
+ol{
+    /* color: #333;     
+    font-size: 32px; */
+}   /*ul과 ol만 적었는데 li에 있는 글자들이 바뀜-> 상속!*/
+
+h5~h6,  /*h5의 자매 중 모든 h6도 순서없는 리스트와 같은 스타일(h5는 적용 안돼)*/
+ul{ 
+    color:#333;
+    font-size:32px;
+}
+
+.korea{
+    color: skyblue;
+}
+
+.japan{
+    color:crimson
+}
+
+.incheon{   /*인천 멤버는 darkblue 글자색*/
+    color:darkblue;
+}
+
+.leader{    /*그룹 리더는 보라색*/
+    color: purple;
+}
+
+li:nth-child(5) {   /*리스트의 5번째 멤버는 밑줄*//*li가 몇번째 자식인지/ 5번째 자식한테 모두 적용*/
+    text-decoration: underline;
+}
+
+/* 짝수행: even,2n; 홀수행: odd */
+li:nth-child(even) {    /*리스트의 짝수 행에 #eee 배경색*/
+    background-color: #eee;
+}
+
+/*5의 배수 행 */
+li:nth-child(5n){   /*리스트의 5의 배수 행에 #aaa 배경색*/
+    background-color: #aaa;
+}
+
+[type="text"] { /*type속성의 값이 “text”인 요소에 aqua 배경색*/
+    background-color: aqua;
+}
+
+ul:nth-child(2) > li:nth-child(2){   /*두번째 ul*/   /*두번째 순서없는 리스트의 2번째 리스트 아이템의 윗줄(overline)*/
+    text-decoration: overline;
+}
