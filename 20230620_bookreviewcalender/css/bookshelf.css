@@ -6,7 +6,7 @@
     justify-content: center;
     max-width: calc(150px * 4 + 80px *3);   /* 최대 4개까지만 보이게*/
     margin-left: auto;  /*가운데 맞춤*/
-    margin-right: auto;
+    margin-right: auto; /*가운데 맞춤*/
 }
 
 .row-container{
