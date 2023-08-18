@@ -39,10 +39,12 @@ bookImageDiv.innerHTML=`<img src="${bookImage}"/>`;
 
 
 // HTML 요소-> js변수
-// js변수.innerHTML
 const titleDiv= document.getElementsByClassName("title")[1];
 // const titleDiv= document.querySelectorAll(".title"); // 추천 ㄴㄴ
+// js변수.innerHTML
 titleDiv.innerHTML=title;
+// titleDiv에 title 속성에 값으로 변수title을 넣자
+titleDiv.setAttribute("title",title);   // = titleDiv.title=title;
 
 const authorDiv= document.getElementsByClassName("author")[1];
 authorDiv.innerHTML=author;

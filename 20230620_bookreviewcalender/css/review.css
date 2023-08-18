@@ -16,11 +16,13 @@ main{
     flex-wrap: wrap;
     margin: 0 40px;
     gap: 40px;
+    min-width: 200px;   /* ... */
 }
 
 .info-group{
     flex-direction: column;
     gap: 40px;
+    overflow: hidden;   /* ... */
 }
 
 .info{
@@ -34,6 +36,9 @@ main{
 .synopsis,
 .phrase{
     font-size: 1.25rem;
+    white-space: nowrap;    /* ... */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .label{
