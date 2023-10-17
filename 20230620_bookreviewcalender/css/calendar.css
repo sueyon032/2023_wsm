@@ -13,6 +13,11 @@ main{
     margin-bottom: 40px;    /*title과 weekday 사이 공간 주자*/
 }
 
+.left,
+.right{
+    cursor: pointer;    /*마우스 커서 손모양으로 바꾸자*/
+}
+
 .weekday.container{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -42,19 +47,19 @@ main{
 }
 
 /*오늘에 맞는 요일로 이동하자*/
-.date.item:nth-child(1){
+/* .date.item:nth-child(1){
     grid-column-start: 6;
-}
+} */
 
 /*토요일 파란색 글자로*/
-.date.item:nth-child(7n+2){ /*공차:7+ 첫째항:2*/
+/*.date.item:nth-child(7n+2){ /*공차:7+ 첫째항:2
     color:blue;
-}
+}*/
 
 /*일요일 빨간색 글자로*/
-.date.item:nth-child(7n+3){
+/* .date.item:nth-child(7n+3){
     color: red;
-}
+} */
 
 .review.flex-container{
     display: flex;
